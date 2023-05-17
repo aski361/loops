@@ -80,6 +80,38 @@
     }
 
 
+    //
+
+    const cats = ['Leopard','Tiger','Serval','Jaguar','Lion'];
+
+    console.log('-----');
+
+    for (const cat of cats) {
+        console.log(cat);
+    }
+    
+    console.log('-----');
+
+    function catToUpper(string) {
+        return string.toUpperCase();
+    }
+
+    const upperCats = cats.map(catToUpper);
+
+    console.log(upperCats);
+
+
+    console.log('-----');
+
+    function lCat(cat) {
+        if(cat.charAt(0) === 'L') {
+            return cat;
+        }
+    }
+
+    const lCats = cats.filter(lCat);
+    console.log(lCats);
+    
 
 
 
